@@ -8,7 +8,7 @@ const Page = async () => {
   const upcomingAnime = await getAnimeResponse("seasons/upcoming");
 
   return (
-    <>
+    <div>
       <section>
         <div>
           <Carousel randomAnime={topAnime} />
@@ -17,7 +17,7 @@ const Page = async () => {
           <AllListAnime populer={topAnime1} upcoming={upcomingAnime} />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

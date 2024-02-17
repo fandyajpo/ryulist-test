@@ -1,8 +1,11 @@
-import { Gabarito } from "next/font/google";
 import "./globals.css";
+import { Gabarito } from "next/font/google";
 import Navbar from "@/components/Navbar";
 
-const gabarito = Gabarito({ subsets: ["latin"] });
+const gabarito = Gabarito({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
   title: "Anime List | Ryutaaa",
