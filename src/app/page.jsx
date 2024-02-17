@@ -2,7 +2,7 @@ import Page from "@/components/home";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-const Page = () => {
+const Pages = () => {
   return (
     <Suspense fallback={<Loading />}>
       <Page />
@@ -10,4 +10,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Pages;
