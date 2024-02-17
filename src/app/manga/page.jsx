@@ -1,7 +1,7 @@
 "use client";
 
 import ListTopManga from "@/components/List/ListManga/TopManga";
-import { getMangaResponse } from "../../libs/api-libs";
+import { getMangaResponse } from "@/libs/api-libs";
 import CarouselManga from "@/components/Carousel/CarouselManga";
 import HeaderMenu from "@/components/utilities/HeaderMenu";
 import PaginationPage from "@/components/utilities/Pagination";
