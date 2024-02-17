@@ -8,24 +8,24 @@ import { useState } from "react";
 import { getAnimeResponse } from "@/libs/api-libs";
 
 const Page = () => {
-  const [pagess, setPage] = useState(1);
+  const [pages, setPage] = useState(1);
   const [upcomingAnime, setUpcomingAnime] = useState([]);
 
   const fetchData = async () => {
-    const data = await getAnimeResponse("seasons/upcoming", `page=${pagess}`);
+    const data = await getAnimeResponse("seasons/upcoming", `page=${pages}`);
     setUpcomingAnime(data);
   };
 
   useEffect(() => {
     fetchData();
-  }, [pagess]);
+  }, [pages]);
 
   return (
     <div className="pt-20">
-      <HeaderMenu title={`UPCOMING ANIME #${pagess}`} />
+      <HeaderMenu title={`UPCOMING ANIME #${pages}`} />
       <List api={upcomingAnime} />
       <PaginationBottom
-        page={pagess}
+        page={pages}
         setPage={setPage}
         lastPage={upcomingAnime.pagination?.last_visible_page}
       />

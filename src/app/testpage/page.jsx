@@ -1,10 +1,8 @@
 const Page = () => {
   return (
-    <>
-      <div>
-        <img src="images/anime.png" alt="" />
-      </div>
-    </>
+    <div>
+      <img src="images/anime.png" alt="" />
+    </div>
   );
 };
 

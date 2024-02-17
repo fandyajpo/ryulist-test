@@ -7,7 +7,7 @@ const Page = async ({ params: { id } }) => {
   const seiyu = await getAnimeResponse(`people/${id}/full`);
   const peran = await getAnimeResponse(`people/${id}/voices`);
 
-  const birthday = seiyu.data.birthday;
+  const birthday = seiyu?.data?.birthday;
 
   const formattedBirthday = format(new Date(birthday), "MMMM dd, yyyy");
 
@@ -73,7 +73,7 @@ const Page = async ({ params: { id } }) => {
           </div>
         </div>
       </div>
-      {/*  */}
+
       <div className="w-full px-20">
         <SeiyuList listAandC={peran} />
       </div>
