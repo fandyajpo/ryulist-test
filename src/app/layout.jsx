@@ -16,8 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${gabarito.className} bg-color-dark`}>
-        <Navbar />
-        {children}
+        <div>
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -4,6 +4,8 @@ import Loading from "./loading";
 
 const Pages = () => {
   return (
+    // <p>Hai</p>
+
     <Suspense fallback={<Loading />}>
       <Page />
     </Suspense>
